@@ -1,0 +1,24 @@
+# MyCodeSnippets
+
+SET hive.exec.dynamic.partition=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+set hive.exec.max.dynamic.partitions.pernode=20000;
+set hive.exec.max.dynamic.partitions=200000;
+set hive.exec.max.created.files=2000000;
+set hive.metastore.client.socket.timeout=900;
+set hive.auto.convert.join=false;
+set hive.vectorized.execution.enabled=false;
+set tez.queue.name=ebi-adhoc;
+set mapreduce.job.queuename=ebi-adhoc;
+set hive.execution.engine=tez;
+SET hive.tez.container.size=10240;
+SET hive.tez.java.opts=-Xmx8192m;
+set tez.task.resource.memory.mb=8192;
+set hive.optimize.sort.dynamic.partition=false;
+set hive.merge.tezfiles=true;
+set hive.merge.mapfiles=true;
+set hive.merge.mapredfiles=true;
+set hive.merge.smallfiles.avgsize=1024000000;
+set hive.exec.parallel=true;
+set dfs.namenode.fs-limits.max-component-length=512;
+set hive.variable.substitute=true;
